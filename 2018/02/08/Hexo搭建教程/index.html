@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#Mac OS X 下Hexo的搭建教程hexo的官网http://hexo.io上本来是有搭建教程的，可太过精简，身边好多小伙伴都弄不成功。所以我写一个麻烦版的，反正亲测是成功的。  安装 cURL： 复制并粘贴入iTerm内   1curl https://raw.github.com/creationix/nvm/master/install.sh | sh  安装brew 详见http:/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/02/08/Hexo搭建教程/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#Mac OS X 下Hexo的搭建教程hexo的官网http://hexo.io上本来是有搭建教程的，可太过精简，身边好多小伙伴都弄不成功。所以我写一个麻烦版的，反正亲测是成功的。  安装 cURL： 复制并粘贴入iTerm内   1curl https://raw.github.com/creationix/nvm/master/install.sh | sh  安装brew 详见http:/">
+<meta property="og:updated_time" content="2018-02-08T14:27:14.631Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="#Mac OS X 下Hexo的搭建教程hexo的官网http://hexo.io上本来是有搭建教程的，可太过精简，身边好多小伙伴都弄不成功。所以我写一个麻烦版的，反正亲测是成功的。  安装 cURL： 复制并粘贴入iTerm内   1curl https://raw.github.com/creationix/nvm/master/install.sh | sh  安装brew 详见http:/">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Hexo搭建教程" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/08/Hexo搭建教程/" class="article-date">
+  <time datetime="2018-02-08T14:27:14.630Z" itemprop="datePublished">2018-02-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#Mac OS X 下Hexo的搭建教程<br>hexo的官网<a href="http://hexo.io" target="_blank" rel="noopener">http://hexo.io</a>上本来是有搭建教程的，可太过精简，身边好多小伙伴都弄不成功。所以我写一个麻烦版的，反正亲测是成功的。</p>
+<ul>
+<li>安装 cURL： 复制并粘贴入iTerm内 </li>
+</ul>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl http<span class="variable">s:</span>//raw.github.<span class="keyword">com</span>/creationix/nvm/master/install.<span class="keyword">sh</span> | <span class="keyword">sh</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装brew 详见<a href="http://brew.sh" target="_blank" rel="noopener">http://brew.sh</a></li>
+</ul>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ruby -e <span class="string">"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">brew </span><span class="keyword">install </span>wget</span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装 Wget  </li>
+</ul>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- http<span class="variable">s:</span>//raw.github.<span class="keyword">com</span>/creationix/nvm/master/install.<span class="keyword">sh</span> | <span class="keyword">sh</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>重启iTerm</li>
+</ul>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm <span class="keyword">install</span> <span class="number">0.10</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装 Hexo</li>
+</ul>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure>
+<p><code>输入  which hexo   如有路径则证明安装成功</code></p>
+<ul>
+<li>创建并进入一个博客文件夹（略）</li>
+</ul>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">npm <span class="keyword">install</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>新建博客</li>
+</ul>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hero <span class="keyword">new</span> <span class="type"></span>“博客标题<span class="string">"</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>把.md的播客文件转换成html网页格式 </li>
+</ul>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo g</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>把博客推送到本地服务器          </li>
+</ul>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo s</span></span><br></pre></td></tr></table></figure>
+<p><code>可以进入终端所提示的地址查看一下html效果</code></p>
+<ul>
+<li><p>注册github账号并且创建同名的repository账号： yourGitHubName/yourGitHubName.github.io</p>
+</li>
+<li><p>部署到github上，在你的博客文件夹下编辑文件 _config.yml</p>
+<pre><code>         deploy：
+             type: git
+             repository: git@github.com:yourGitHubName/yourGitHubName.github.io.git
+             branch: master
+（严格遵守缩进格式，第二行空4格，冒号后空1格  ）
+</code></pre></li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ssh-keygen -t rsa -C “你的邮箱地址<span class="string">"</span></span><br></pre></td></tr></table></figure>
+<p>会在家目录下生成一个.ssh文件夹，里面包含两个文件，cat 一下 id_rsa.pub 文件，复制其内容。打开自己的github设置里有一个SSH Keys，添加key（在这里粘贴，名字随意起）。</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo g</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">hexo d</span></span><br></pre></td></tr></table></figure>
+<p>到此，直接进入 yourGitHubName.github.io 就可以访问了</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/02/08/Hexo搭建教程/" data-id="cjdem7csg0000c8domrv7lz4r" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/02/08/第二篇/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          第二篇
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  
+    
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/02/08/看看这里/">看看这里</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/08/第二篇/">第二篇</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/08/Hexo搭建教程/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
